@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <div class="container--header">
+            <div class="img-logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <form action="" class="form-search">
+                <input type="text" placeholder="Buscar productos, marcas">
+                <button type="submit"> <i class="bi bi-search"></i></button>
+            </form>
+            <div class="header-buying">
+                <i class="bi bi-cash-coin"></i> Comprá en cuotas y sin tarjeta de crédito
+            </div>
+        </div>
+        <nav class="nav--extended">
+            <ul class="menu--shop">
+
+                <li><a href="/">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+
+            <ul class="menu--login">
+
+                <li><a href="/register">Creá tu cuenta <i class="bi bi-file-earmark-person"></i></a></li>
+                <li><a href="/login">Ingresá <i class="bi bi-arrow-right-circle"></i></a></li>
+                <li><a href="#">Mis compras <i class="bi bi-basket"></i></a></li>
+            </ul>
+
+        </nav>
+
+
+        <div class="burger-menu">
+            <i class="bi bi-list"></i>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="section--register">
+
+            <form class="register-form" action="/">
+                <h2>User Registration</h2>
+
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required minlength="4">
+
+                <label for="birthdate">Birthdate</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="profile">User Profile</label>
+                <select id="profile" name="profile">
+                    <option value="buy">Buy</option>
+                    <option value="sell">Sell</option>
+                </select>
+
+                <label for="interests">Interest Categories</label>
+
+                <fieldset>
+                    <legend>Interests</legend>
+                    <label>
+                        <input type="checkbox" name="interests" value="Electro">Electro
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interests" value="Moda">Moda
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interests" value="Hogar">Hogar
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interests" value="Juguetería">Juguetería
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interests" value="Vida sana">Vida sana
+                    </label>
+                </fieldset>
+
+                <label for="photo">User Photo</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required minlength="4">
+
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </form>
+
+
+        </section>
+    </main>
+
+
+
+    <footer>
+        <ul class="footer--list">
+            <li>
+                <section>
+                    <i class="bi bi-credit-card-2-back icon--footer"></i>
+                    <h3>Pagá con tarjeta o en efectivo</h3>
+                    <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                        puntos de pago. ¡Y siempre es seguro!
+                    </p>
+                </section>
+            </li>
+            <li>
+                <section>
+                    <i class="bi bi-gift-fill icon--footer"></i>
+                    <h3>Envío gratis desde $ 2.500</h3>
+                    <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                        productos. Es un beneficio de Mercado Puntos.
+                    </p>
+                </section>
+            </li>
+            <li>
+                <section>
+                    <i class="bi bi-shield-shaded icon--footer"></i>
+                    <h3> Seguridad, de principio a fin </h3>
+                    <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                        porque estás siempre protegid@.
+                    </p>
+                </section>
+            </li>
+
+        </ul>
+
+        <li>
+            <section>
+                <h3>Copyright © 1999-2020 MercadoLiebre S.R.L.</h3>
+            </section>
+        </li>
+    </footer>
+
+</body>
+
+</html>

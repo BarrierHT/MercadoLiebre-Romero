@@ -1,0 +1,62 @@
+/* Center the form vertically and horizontally */
+.section--register {
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.register-form {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 400px;
+}
+
+.register-form h2 {
+	font-size: 24px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.register-form label {
+	display: block;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.register-form input[type='text'],
+.register-form input[type='date'],
+.register-form select,
+.register-form input[type='file'],
+.register-form input[type='password'] {
+	width: 100%;
+	padding: 10px;
+	margin: 5px 3px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.register-form select {
+	height: 36px;
+}
+
+.register-form button {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-top: 20px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.register-form button[type='reset'] {
+	background-color: #ccc;
+	color: #333;
+	margin-top: 10px;
+}

@@ -13,4 +13,12 @@ app.get('/', (req, res, next) => {
 	res.sendFile(path.join(path.resolve(), 'src', 'views', 'home.html'));
 });
 
+app.get('/register', (req, res, next) => {
+	res.sendFile(path.join(path.resolve(), 'src', 'views', 'register.html'));
+});
+
+app.get('/login', (req, res, next) => {
+	res.sendFile(path.join(path.resolve(), 'src', 'views', 'login.html'));
+});
+
 app.listen(app.get('port') || 8000);
