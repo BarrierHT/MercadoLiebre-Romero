@@ -1,0 +1,236 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+header {
+	background-color: #eac926;
+	font-family: 'Roboto';
+	padding: 1em;
+	text-align: center;
+}
+
+.container--header {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.nav--extended {
+	display: flex;
+	justify-content: space-between;
+	overflow: auto;
+}
+
+.menu--shop,
+.menu--login {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu--login li,
+.menu--shop li {
+	margin-left: 5px;
+}
+
+.img-logo {
+	width: 50%;
+}
+
+.img-logo img {
+	max-height: 150px;
+	max-width: 100px;
+}
+
+.form-search {
+	width: 50%;
+	display: flex;
+}
+
+.form-search input {
+	max-width: 100%;
+	width: 80%;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+ul {
+	list-style: none;
+}
+
+.burger-menu {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	height: 10vh;
+	justify-content: center;
+}
+
+.burger-menu i {
+	font-size: 40px; /* Ajusta el tamaño deseado */
+	background-color: #03264c;
+	padding: 4px;
+	border-radius: 10%;
+}
+
+section {
+	text-align: center;
+}
+
+.section--body {
+	margin: 10vh;
+}
+
+main {
+	width: 90vw;
+	box-shadow: 0px 0px 10px rgb(251, 255, 0);
+	margin: auto;
+	/* Otros estilos para el flex container, si es necesario */
+}
+
+.article--image img {
+	max-height: 20em;
+	max-width: 100%;
+}
+
+.description-products {
+	font-size: 16px;
+}
+
+.discount {
+	font-size: 16px;
+}
+
+.price {
+	font-size: 18px;
+}
+
+.titles-section {
+	font-size: 24px;
+}
+
+.container--article {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -10px;
+	align-items: center;
+}
+article {
+	margin-bottom: 10px;
+	width: 100%;
+	margin: 10px;
+	overflow: auto;
+}
+.article--description {
+	border-top: 1px solid #ebebeb;
+	padding: 15px;
+	position: relative;
+}
+
+.logo--envio {
+	display: block;
+	font-size: 16px;
+	padding: 5px;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #39b54a;
+	fill: #39b54a;
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 20px;
+	top: -15px;
+}
+
+.price--discount {
+	display: flex;
+	align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+}
+
+.price {
+	flex: 30%;
+}
+
+.discount {
+	flex: 70%;
+}
+
+/* Estilo para el footer */
+footer {
+	background-color: #fff;
+	padding: 20px;
+}
+
+/* Estilo para cada artículo dentro del footer */
+footer li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.description-products {
+	display: none;
+}
+
+/* Estilo para los íconos dentro de cada artículo */
+footer li i {
+	font-size: 2em;
+	margin-bottom: 10px;
+}
+
+.icon--footer {
+	color: rgb(103, 103, 248);
+}
+
+.nav--extended {
+	display: none;
+}
+
+/* Estilos para tablets (ancho mínimo 361px) */
+@media screen and (min-width: 361px) {
+	.description-products {
+		display: block;
+	}
+	article {
+		width: calc(50% - 20px); /* En tablets se muestran 2 cajas por fila */
+	}
+	.article--description {
+		box-shadow: 0px 0px 10px rgb(100, 100, 100);
+	}
+
+	.nav--extended {
+		display: flex;
+	}
+
+	.burger-menu {
+		display: none;
+	}
+
+	.img-logo {
+		width: 33%;
+	}
+
+	.form-search {
+		width: 33%;
+	}
+
+	.header-buying {
+		width: 33%;
+	}
+}
+
+/* Estilos para desktops (ancho mínimo 769px) */
+@media screen and (min-width: 769px) {
+	article {
+		width: calc(25% - 20px); /* En tablets se muestran 4 cajas por fila */
+	}
+}

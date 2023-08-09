@@ -1,0 +1,18 @@
+{
+  "name": "proyecto-modulo4",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "module4",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon src/app.js",
+    "start" : "node src/app.js"
+  },
+  "author": "BarrierHT",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}
